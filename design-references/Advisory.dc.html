@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Advisory firms – Lead and client system</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#0B1F3A;text-decoration:none}
+a:hover{color:#1F4E8C}
+</style>
+</helmet>
+<div style="font-family: Inter, system-ui, sans-serif; color: #0B1F3A; background: #FFFFFF; width: 100%;">
+
+<header style="background: #0B1F3A; color: #FFFFFF;">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+<a href="Main.dc.html" style="font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 21px; color: #FFFFFF;">[Firm Name]</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px;">
+<a href="Main.dc.html" style="color: #C9D3E3;">Home</a>
+<span style="color: #FFFFFF; font-weight: 500; border-bottom: 2px solid #C9A961; padding-bottom: 3px;">Advisory firms</span>
+<a href="Intermediaries.dc.html" style="color: #C9D3E3;">Deal intermediaries</a>
+<a href="#contact" style="background: #FFFFFF; color: #0B1F3A; padding: 11px 18px; border-radius: 4px; font-weight: 600;">Book a call</a>
+</div>
+</nav>
+</header>
+
+<section style="background: #F4F6F9; border-bottom: 1px solid #DDE2EA;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 1 1 460px; min-width: 0;">
+<p style="margin: 0 0 18px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A6D2F;">M&amp;A · Capital raise · Debt advisory</p>
+<h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: clamp(38px, 5vw, 58px); line-height: 1.08; letter-spacing: -0.015em;">Your bankers should be closing deals, not chasing them.</h1>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.6; color: #3B4A60;">We build AI deal systems from origination to close. We find where your team loses the most mandates and time, then plug AI into your existing CRM, inbox and data room to fix it.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px;">
+<a href="#contact" style="background: #0B1F3A; color: #FFFFFF; padding: 16px 22px; border-radius: 4px; font-weight: 600; font-size: 16px;">Book a 15-minute walkthrough</a>
+<a href="#modules" style="border: 1px solid #B9C3D2; padding: 15px 22px; border-radius: 4px; font-weight: 500; font-size: 16px;">See the modules</a>
+</div>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; border: 1px solid #D5DCE6; border-radius: 6px; box-shadow: 0 1px 2px rgba(11,31,58,0.06);">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid #E3E8EF;">
+<span style="font-size: 14px; font-weight: 600;">Mandate pipeline</span>
+<span style="font-size: 12px; color: #5A6779;">Illustrative</span>
+</div>
+<div style="overflow-x: auto;">
+<table style="width: 100%; min-width: 460px; border-collapse: collapse; font-size: 13px;">
+<thead>
+<tr style="text-align: left; color: #5A6779;">
+<th style="padding: 10px 18px; font-weight: 500; border-bottom: 1px solid #E3E8EF;">Opportunity</th>
+<th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid #E3E8EF;">Type</th>
+<th style="padding: 10px 12px; font-weight: 500; border-bottom: 1px solid #E3E8EF;">Stage</th>
+<th style="padding: 10px 18px; font-weight: 500; border-bottom: 1px solid #E3E8EF;">Next action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 18px; border-bottom: 1px solid #EEF1F5; font-weight: 500;">Project Atlas</td>
+<td style="padding: 12px; border-bottom: 1px solid #EEF1F5; color: #3B4A60;">Sell-side</td>
+<td style="padding: 12px; border-bottom: 1px solid #EEF1F5;"><span style="background: #E6EDF7; color: #1F4E8C; padding: 3px 8px; border-radius: 3px; font-size: 12px; font-weight: 500;">Qualified</span></td>
+<td style="padding: 12px 18px; border-bottom: 1px solid #EEF1F5; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3B4A60;">Intro call booked</td>
+</tr>
+<tr>
+<td style="padding: 12px 18px; border-bottom: 1px solid #EEF1F5; font-weight: 500;">Project Harbor</td>
+<td style="padding: 12px; border-bottom: 1px solid #EEF1F5; color: #3B4A60;">Debt</td>
+<td style="padding: 12px; border-bottom: 1px solid #EEF1F5;"><span style="background: #F6EFDF; color: #7A5E22; padding: 3px 8px; border-radius: 3px; font-size: 12px; font-weight: 500;">Engagement letter</span></td>
+<td style="padding: 12px 18px; border-bottom: 1px solid #EEF1F5; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3B4A60;">Follow-up 2 of 4</td>
+</tr>
+<tr>
+<td style="padding: 12px 18px; border-bottom: 1px solid #EEF1F5; font-weight: 500;">Project Linden</td>
+<td style="padding: 12px; border-bottom: 1px solid #EEF1F5; color: #3B4A60;">Capital raise</td>
+<td style="padding: 12px; border-bottom: 1px solid #EEF1F5;"><span style="background: #E8F3EE; color: #1D6B4C; padding: 3px 8px; border-radius: 3px; font-size: 12px; font-weight: 500;">Mandate signed</span></td>
+<td style="padding: 12px 18px; border-bottom: 1px solid #EEF1F5; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3B4A60;">Investor list ready</td>
+</tr>
+<tr>
+<td style="padding: 12px 18px; font-weight: 500;">Owner inquiry</td>
+<td style="padding: 12px; color: #3B4A60;">Sell-side</td>
+<td style="padding: 12px;"><span style="background: #EEF0F3; color: #47546A; padding: 3px 8px; border-radius: 3px; font-size: 12px; font-weight: 500;">Nurture</span></td>
+<td style="padding: 12px 18px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3B4A60;">Check-in in 60 days</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 24px;">
+<p style="margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A6D2F;">The flow</p>
+<h2 style="margin: 0; max-width: 780px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 38px; line-height: 1.15;">How an inquiry becomes a mandate</h2>
+<p style="margin: 16px 0 0; max-width: 720px; font-size: 17px; line-height: 1.6; color: #3B4A60;">Every seller, investor or borrower lead runs through the same path, whether it came from your website, a referral, LinkedIn or a cold inbound email.</p>
+<ol style="margin: 48px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; border-top: 2px solid #0B1F3A;">
+<li style="flex: 1 1 150px; min-width: 0; padding: 22px 16px 22px 0; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8A6D2F;">01</span>
+<span style="font-weight: 600; font-size: 17px;">Inquiry</span>
+<span style="font-size: 14px; line-height: 1.5; color: #4A586C;">Website, email, LinkedIn or referral lands in one place</span>
+</li>
+<li style="flex: 1 1 150px; min-width: 0; padding: 22px 16px 22px 0; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8A6D2F;">02</span>
+<span style="font-weight: 600; font-size: 17px;">Reply</span>
+<span style="font-size: 14px; line-height: 1.5; color: #4A586C;">Professional email reply within 60 seconds, any hour</span>
+</li>
+<li style="flex: 1 1 150px; min-width: 0; padding: 22px 16px 22px 0; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8A6D2F;">03</span>
+<span style="font-weight: 600; font-size: 17px;">Qualify</span>
+<span style="font-size: 14px; line-height: 1.5; color: #4A586C;">Revenue, EBITDA, deal size, timeline, transaction type</span>
+</li>
+<li style="flex: 1 1 150px; min-width: 0; padding: 22px 16px 22px 0; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8A6D2F;">04</span>
+<span style="font-weight: 600; font-size: 17px;">Alert</span>
+<span style="font-size: 14px; line-height: 1.5; color: #4A586C;">Fit mandates go straight to the partner</span>
+</li>
+<li style="flex: 1 1 150px; min-width: 0; padding: 22px 16px 22px 0; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8A6D2F;">05</span>
+<span style="font-weight: 600; font-size: 17px;">Meeting</span>
+<span style="font-size: 14px; line-height: 1.5; color: #4A586C;">Booked into the calendar, with reminders</span>
+</li>
+<li style="flex: 1 1 150px; min-width: 0; padding: 22px 16px 22px 0; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8A6D2F;">06</span>
+<span style="font-weight: 600; font-size: 17px;">Follow-up</span>
+<span style="font-size: 14px; line-height: 1.5; color: #4A586C;">After the call, NDA and engagement letter</span>
+</li>
+<li style="flex: 1 1 150px; min-width: 0; padding: 22px 0 22px 0; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8A6D2F;">07</span>
+<span style="font-weight: 600; font-size: 17px;">Signed or nurtured</span>
+<span style="font-size: 14px; line-height: 1.5; color: #4A586C;">Mandate signed, or kept warm until timing is right</span>
+</li>
+</ol>
+</section>
+
+<section id="modules" style="background: #F4F6F9; border-top: 1px solid #DDE2EA; border-bottom: 1px solid #DDE2EA;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px;">
+<div style="flex: 1 1 520px; min-width: 0;">
+<p style="margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A6D2F;">The modules</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 38px; line-height: 1.15;">What you get</h2>
+</div>
+<p style="flex: 1 1 380px; min-width: 0; margin: 0; font-size: 16px; line-height: 1.6; color: #3B4A60;">You don't need all of it. We map your process first and switch on only the modules that close your gaps.</p>
+</div>
+<div style="margin-top: 40px; background: #FFFFFF; border: 1px solid #D5DCE6; border-radius: 6px; overflow-x: auto;">
+<table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 15px;">
+<thead>
+<tr style="text-align: left; background: #0B1F3A; color: #FFFFFF;">
+<th style="padding: 16px 24px; font-weight: 600; width: 32%;">What you get</th>
+<th style="padding: 16px 24px; font-weight: 600;">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Instant reply, 24/7</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Every seller, investor or borrower inquiry gets a professional email reply within 60 seconds, even after hours or during meetings</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Lead qualification</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Collects the essentials up front (revenue, EBITDA, deal size, timeline, transaction type) so partners only spend time on fit mandates</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Hot-lead alerts</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Qualified, deal-ready leads are sent straight to the partner's phone and inbox so they can call first</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Meeting booking &amp; reminders</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Qualified leads book directly into the partner's calendar, with reminders so first meetings actually happen</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Post-meeting follow-up</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Automatic follow-ups after the intro call, NDA or engagement letter until the client signs, re-engages or declines</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Owner nurture</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Business owners who aren't ready to transact get regular, relevant check-ins, so you're the first call when timing is right</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Investor &amp; buyer reactivation</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Past buyers, lenders and investors are re-engaged when a new deal fits their criteria</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Referral partner nurture</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Regular touches with CPAs, attorneys, wealth managers and bankers who send you deal flow</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">One pipeline</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Every inquiry, mandate and counterparty tracked in one place, synced to your existing CRM (DealCloud, Salesforce, Affinity, HubSpot)</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Compliance-ready messaging</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">Investor-facing messages require partner approval before sending, and all communications are logged and archived</td></tr>
+<tr><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; font-weight: 600; vertical-align: top;">Monthly optimization</td><td style="padding: 18px 24px; border-bottom: 1px solid #E6EAF0; line-height: 1.55; color: #3B4A60;">We review and refine every message, sequence and workflow each month</td></tr>
+<tr><td style="padding: 18px 24px; font-weight: 600; vertical-align: top;">Monthly results call</td><td style="padding: 18px 24px; line-height: 1.55; color: #3B4A60;">Response time, leads qualified, meetings booked and mandates moved forward, reviewed together</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 24px;">
+<p style="margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8A6D2F;">Built for advisory work</p>
+<h2 style="margin: 0; max-width: 760px; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 38px; line-height: 1.15;">Discreet, controlled and in your voice</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; margin-top: 44px;">
+<div style="flex: 1 1 300px; min-width: 0; border-top: 1px solid #C9D1DD; padding-top: 22px;">
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600;">Partner approval</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3B4A60;">Anything investor-facing or sensitive waits for a partner's sign-off before it goes out.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; border-top: 1px solid #C9D1DD; padding-top: 22px;">
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600;">Logged and archived</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3B4A60;">Every message is recorded against the contact and deal, ready for your records and review.</p>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; border-top: 1px solid #C9D1DD; padding-top: 22px;">
+<h3 style="margin: 0 0 10px; font-size: 19px; font-weight: 600;">Your tone, not a template</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3B4A60;">Messages are written in your firm's voice and reviewed with you before anything goes live.</p>
+</div>
+</div>
+</section>
+
+<section style="background: #0B1F3A; color: #FFFFFF;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px;">
+<p style="margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A961;">Setup</p>
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 38px; line-height: 1.15;">Live in about two weeks</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 44px;">
+<div style="flex: 1 1 240px; min-width: 0; border-top: 1px solid #34486A; padding-top: 22px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C9A961;">01 · Map</span>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #CBD4E2;">A working session on how mandates move through your firm and where they stall.</p>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; border-top: 1px solid #34486A; padding-top: 22px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C9A961;">02 · Build</span>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #CBD4E2;">We build the chosen modules and write every message for your review.</p>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; border-top: 1px solid #34486A; padding-top: 22px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C9A961;">03 · Connect</span>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #CBD4E2;">We connect your CRM, inbox, calendar and forms, then test every path.</p>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; border-top: 1px solid #34486A; padding-top: 22px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #C9A961;">04 · Run</span>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #CBD4E2;">We monitor, report monthly and add modules as your deal flow grows.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px;">
+<div style="flex: 1 1 520px; min-width: 0;">
+<h2 style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 38px; line-height: 1.15;">See where your mandates are slipping.</h2>
+<p style="margin: 14px 0 0; font-size: 17px; line-height: 1.6; color: #3B4A60;">A 15-minute walkthrough of your current lead flow and the modules that would fix it.</p>
+</div>
+<a href="mailto:[your@email.com]" style="background: #0B1F3A; color: #FFFFFF; padding: 18px 26px; border-radius: 4px; font-weight: 600; font-size: 17px;">Book a 15-minute call</a>
+</section>
+
+<footer style="border-top: 1px solid #DDE2EA;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #5A6779;">
+<span>© 2026 [Firm Name]</span>
+<div style="display: flex; flex-wrap: wrap; gap: 24px;">
+<a href="Main.dc.html" style="color: #5A6779;">Home</a>
+<a href="Intermediaries.dc.html" style="color: #5A6779;">Deal intermediaries</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4300}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
